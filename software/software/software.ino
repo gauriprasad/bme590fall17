@@ -11,7 +11,7 @@ int currRead = 0;
 int prevRead = 0;
 
 int count = 0;
-boolean changeOccured = 0;
+boolean changeOccurred = 0;
 
 
 void setup() {
@@ -23,20 +23,29 @@ void setup() {
   pinMode(led3, OUTPUT);
 
   pinMode(digitalPinIn, INPUT);
-  preRead = digitaRead(digitalPinIn);
+  prevRead = digitalRead(digitalPinIn);
 }
 
 void loop() {
+  // read current state
+  currRead = digitalRead(digitalPinIn);
   
-//  if something is true, then 
-//  count+=1
-// change LED state
-
-
-
+  // high to low, a finger is passing the photoresistor
+  if ((currRead == 0) && (prevRead == 1)){
+    changeOccurred = 1;
+  }
+  // low to high, a finger finished passing the photoresistor
+  if ((changeOccurred) && (currRead == 1) && (prevRead == 0)){
+    count+=1;
+    computeBits(count);
+    changeOccurred = 0;
+  }
+  if (count == 15){
+    count = 0; 
+  }
+  prevRead = currRead;
 }
 
-// Compute Bits for 
 void computeBits(int c){
   boolean bit0 = bitRead(c,0);
   changeLEDState(bit0, led0);
