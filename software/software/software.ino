@@ -6,7 +6,9 @@ int led1 = 1;
 int led2 = 2;
 int led3 = 3;
 
-int digitalPinIn = 8;
+int digitalPinIn = 2;
+int resetPinIn = 13;
+
 int currRead = 0;
 int prevRead = 0;
 
@@ -22,28 +24,44 @@ void setup() {
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
 
+  pinMode(resetPinIn, INPUT);
   pinMode(digitalPinIn, INPUT);
   prevRead = digitalRead(digitalPinIn);
 }
 
 void loop() {
+  
   // read current state
   currRead = digitalRead(digitalPinIn);
   
   // high to low, a finger is passing the photoresistor
-  if ((currRead == 0) && (prevRead == 1)){
+  if (!(changeOccurred) && (currRead == 0) && (prevRead == 1)){
+    Serial.println("finger passing");
     changeOccurred = 1;
   }
+
   // low to high, a finger finished passing the photoresistor
   if ((changeOccurred) && (currRead == 1) && (prevRead == 0)){
+    Serial.println("finger passed");
     count+=1;
+    Serial.println(count);
     computeBits(count);
     changeOccurred = 0;
   }
-  if (count == 15){
-    count = 0; 
+  
+  if ((count == 15) || (digitalRead(resetPinIn) == 0)){
+    reset();
   }
+  
   prevRead = currRead;
+}
+
+void reset(){
+  digitalWrite(led0, LOW);
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  digitalWrite(led3, LOW);
+  count = 0;
 }
 
 void computeBits(int c){
