@@ -1,0 +1,13 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[circuit_2.GTL]
+   Generated File[circuit_2.RUL]
+   Generated File[circuit_2.EXTREP]
+   Generated File[circuit_2.REP]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 12:13:57 PM On 11/1/2017

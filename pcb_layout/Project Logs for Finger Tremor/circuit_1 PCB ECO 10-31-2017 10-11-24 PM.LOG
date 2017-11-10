@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetARDUINO IN_3 Pin=Q1-1
+Removed Pin From Net: NetName=NetARDUINO IN_3 Pin=R2-1
+Removed Pin From Net: NetName=NetARDUINO IN_2 Pin=RESET/PHOTO-4
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=Q1-1
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=R2-1
+Added Pin To Net: NetName=NetARDUINO IN_3 Pin=RESET/PHOTO-4

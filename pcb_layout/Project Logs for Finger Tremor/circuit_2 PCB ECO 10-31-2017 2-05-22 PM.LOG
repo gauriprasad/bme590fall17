@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=P? Old Footprint=HDR1X6H New Footprint=HDR1X6
+Change Component Comment : Designator=P? Old Comment=Header 6H New Comment=Header 6
+Added Member To Class: ClassName=circuit_2 Member=Component P? Header 4X2A
+Added Member To Class: ClassName=circuit_1 Member=Component R? Resistor
+Added Member To Class: ClassName=circuit_1 Member=Component R? Resistor
+Added Member To Class: ClassName=circuit_1 Member=Component R? Photoresistor

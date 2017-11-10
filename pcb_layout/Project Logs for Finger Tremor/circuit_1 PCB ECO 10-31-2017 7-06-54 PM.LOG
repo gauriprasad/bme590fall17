@@ -1,0 +1,74 @@
+Added Component: Designator=AR1(H-08A)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.analog.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "REV. B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Can; 8 Leads; Pin Circle Dia. 5.08 mm; Lead Dia. 0.53 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "H-08A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "1990"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=ARDUINO IN(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(E3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.6mm; Lead Dia. 0.5 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "E3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "1995/1996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "47K"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RES)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RES)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "2K"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1.5K"; VariantName = "[No Variations]"
+Added Component: Designator=RESET/PHOTO(HDR1X4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetAR1_2 Pin=AR1-2
+Added Pin To Net: NetName=NetAR1_2 Pin=R3-2
+Added Pin To Net: NetName=NetAR1_2 Pin=R4-2
+Added Net: Name=NetAR1_2
+Added Pin To Net: NetName=NetAR1_3 Pin=AR1-3
+Added Pin To Net: NetName=NetAR1_3 Pin=R1-1
+Added Pin To Net: NetName=NetAR1_3 Pin=RESET/PHOTO-1
+Added Net: Name=NetAR1_3
+Added Pin To Net: NetName=NetAR1_6 Pin=AR1-6
+Added Pin To Net: NetName=NetAR1_6 Pin=Q1-2
+Added Pin To Net: NetName=NetAR1_6 Pin=R3-1
+Added Net: Name=NetAR1_6
+Added Pin To Net: NetName=NetAR1_7 Pin=AR1-7
+Added Pin To Net: NetName=NetAR1_7 Pin=ARDUINO IN-1
+Added Pin To Net: NetName=NetAR1_7 Pin=R1-2
+Added Pin To Net: NetName=NetAR1_7 Pin=R2-2
+Added Pin To Net: NetName=NetAR1_7 Pin=RESET/PHOTO-3
+Added Net: Name=NetAR1_7
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=ARDUINO IN-2
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=Q1-3
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=R4-1
+Added Pin To Net: NetName=NetARDUINO IN_2 Pin=RESET/PHOTO-2
+Added Net: Name=NetARDUINO IN_2
+Added Pin To Net: NetName=NetARDUINO IN_4 Pin=ARDUINO IN-4
+Added Pin To Net: NetName=NetARDUINO IN_4 Pin=RESET/PHOTO-4
+Added Net: Name=NetARDUINO IN_4
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R2-1
+Added Net: Name=NetQ1_1
+Added Class: Name=circuit_1
+Added Room: Name=circuit_1
