@@ -1,16 +1,18 @@
 // Gauri Prasad, Tim Hoer, Jocelyn Corey
 // Finger Tremor Project
 
-int led0 = 4;
-int led1 = 5;
+int led0 = 2;
+int led1 = 4;
 int led2 = 6;
-int led3 = 7;
+int led3 = 8;
 
-int digitalPinIn = 2;
-int resetPinIn = 13;
+int digitalPinIn = 10;
+int resetPinIn = 12;
 
 int currRead = 0;
 int prevRead = 0;
+int prevResetRead = 0;
+int currResetRead = 0;
 
 int count = 0;
 boolean changeOccurred = 0;
@@ -27,12 +29,16 @@ void setup() {
   pinMode(resetPinIn, INPUT);
   pinMode(digitalPinIn, INPUT);
   prevRead = digitalRead(digitalPinIn);
+  prevResetRead = digitalRead(resetPinIn);
+  
 }
 
 void loop() {
   
   // read current state
   currRead = digitalRead(digitalPinIn);
+  currResetRead = digitalRead(resetPinIn);
+  Serial.println(currResetRead);
 //  Serial.println(currRead);
   // high to low, a finger is passing the photoresistor
   if (!(changeOccurred) && (currRead == 0) && (prevRead == 1)){
@@ -52,11 +58,11 @@ void loop() {
   if (count == 16){
     backToOne();
   }
-  
-  if (digitalRead(resetPinIn) == 0){
+  if (currResetRead!=prevResetRead){
+    Serial.println("reset");
     reset();
   }
-  
+  prevResetRead = currResetRead;
   prevRead = currRead;
   delay(50);
 }
