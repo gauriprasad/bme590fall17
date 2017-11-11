@@ -1,0 +1,19 @@
+Added Component: Designator=U?(PDIP8)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetAR1_7 Pin=U?-8
+Change Net Name : Old Net Name=NetAR1_7 New Net Name=NetARDUINO IN_1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=R3-1
+Added Pin To Net: NetName=NetQ1_2 Pin=U?-1
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=RESET/PHOTO-1
+Added Pin To Net: NetName=NetR1_1 Pin=U?-3
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=R4-2
+Added Pin To Net: NetName=NetR3_2 Pin=U?-2
+Added Net: Name=NetR3_2
+Added Member To Class: ClassName=circuit_1 Member=Component RESET/PHOTO Header 4
+Added Member To Class: ClassName=circuit_1 Member=Component U? UA1458TC
+Added Room: Name=circuit_1

@@ -11,8 +11,8 @@ int resetPinIn = 12;
 
 int currRead = 0;
 int prevRead = 0;
-int prevResetRead = 0;
-int currResetRead = 0;
+//int prevResetRead = 0;
+int currResetRead = 1;
 
 int count = 0;
 boolean changeOccurred = 0;
@@ -29,7 +29,7 @@ void setup() {
   pinMode(resetPinIn, INPUT);
   pinMode(digitalPinIn, INPUT);
   prevRead = digitalRead(digitalPinIn);
-  prevResetRead = digitalRead(resetPinIn);
+//  prevResetRead = digitalRead(resetPinIn);
   
 }
 
@@ -58,11 +58,11 @@ void loop() {
   if (count == 16){
     backToOne();
   }
-  if (currResetRead!=prevResetRead){
+  if (currResetRead == 0){
     Serial.println("reset");
     reset();
   }
-  prevResetRead = currResetRead;
+//  prevResetRead = currResetRead;
   prevRead = currRead;
   delay(50);
 }
